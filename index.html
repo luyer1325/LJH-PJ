@@ -1,11 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 첫페이지!</title>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aespa is zzin</title>
+<meta name="description" content="부장님이 허락한 에스파 덕질 — 사진/갤러리/디스코그래피/공식 링크">
+<link rel="canonical" href="https://&lt;your-github-pages-url&gt;/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="aespa is zzin">
+<meta property="og:description" content="퇴근 시간보다 기다려지는 에스파 컴백. aespa The 6th Mini Album 〖Rich Man〗 2025.09.05 1PM (KST)">
+<meta property="og:image" content="https://&lt;your-github-pages-url&gt;/images/kcon_la_2025.webp">
+<meta property="og:url" content="https://&lt;your-github-pages-url&gt;/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{ --edge:#2b3138 }
+html,body{background:#000;color:#fff;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:0}
+.nav{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.55);backdrop-filter:saturate(150%) blur(6px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:10px 20px;display:flex;align-items:center}
+.logo{font-weight:700;font-size:14px;letter-spacing:.2px}
+.menu{margin-left:auto;display:flex;gap:18px}
+.menu a{color:#fff;text-decoration:none;opacity:.9;font-size:13px;font-weight:300;letter-spacing:.1px}
+.menu a:hover{opacity:1;text-decoration:underline}
+.hero{max-width:1100px;margin:0 auto;padding:36px 20px}
+.hero h1{margin:0 0 10px;font-size:36px}
+.hero p{margin:0;font-size:18px;color:#ddd}
+.section{max-width:1100px;margin:0 auto;padding:0 20px 28px}
+.section h2{margin:26px 0 12px;font-size:22px}
+.members{display:grid;gap:14px}
+@media(min-width:800px){.members{grid-template-columns:repeat(4,1fr)}}
+.member{border:1px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden;background:rgba(15,17,21,.86);position:relative}
+.member .pic{aspect-ratio:3/4;display:block;min-height:240px;position:relative;background:#0f1115}
+.member .pic img{width:100%;height:100%;display:block;object-fit:cover}
+.member .pic img[alt="WINTER"]{object-position:65% 50%}
+.member h4{margin:10px}
+.member:hover .pic img{opacity:.75;filter:saturate(.95)}
+.member .ig-link{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s ease;background:rgba(0,0,0,.12);text-decoration:none}
+.member:focus-within .ig-link,.member:hover .ig-link{opacity:1}
+.member .ig-link svg{width:44px;height:44px;fill:#fff;filter:drop-shadow(0 4px 10px rgba(0,0,0,.45))}
+@media(hover:none){ .member .ig-link{opacity:1;background:transparent;justify-content:flex-end;align-items:flex-start;padding:8px} .member .ig-link svg{width:26px;height:26px;opacity:.9} }
+#gallery.section{max-width:1100px}
+.gallery{display:grid;gap:14px}
+.section h2 + .gallery{margin-top:12px}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery .gcard{border:1px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden;background:rgba(15,17,21,.86);margin:0}
+.gallery img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;cursor:zoom-in}
+#gallery .g-smtown-day2 img{object-position:50% 35%}
+.gcap{display:flex;align-items:center;gap:8px;padding:10px 12px;font-size:13px;color:#ddd;border-top:1px solid rgba(255,255,255,.08)}
+.gcap strong{font-size:13px;color:#fff;font-weight:600}
+.gcap span{opacity:.85;font-size:12px;margin-left:auto;text-align:right}
+.disco{display:grid;gap:14px}
+@media(min-width:800px){.disco{grid-template-columns:repeat(2,1fr)}}
+.track-card{border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:14px;background:rgba(15,17,21,.86);display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:center}
+.track-card h3{margin:0 0 6px;font-size:18px}
+.track-card .meta{font-size:12px;color:#bbb;margin-bottom:10px}
+.track-card .actions{display:flex;gap:10px}
+.track-card .btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;padding:8px 10px;border:1px solid #444;border-radius:8px;color:#fff;text-decoration:none}
+.track-card .btn:hover{background:#111}
+.track-card .btn svg{width:16px;height:16px;fill:#fff;opacity:.95}
+.track-card .cover{display:block;width:100%;aspect-ratio:1/1;border-radius:8px;overflow:hidden;background:#1a1d22;border:1px solid #2a2f36}
+.track-card .cover img{width:100%;height:100%;object-fit:cover;display:block}
+.links{border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:14px;background:rgba(15,17,21,.86)}
+.links ul{margin:0;padding-left:0;list-style:none}
+.links a{display:inline-flex;align-items:center;gap:8px;color:#fff;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.links a svg{width:16px;height:16px;fill:#fff;opacity:.95}
+.footer{text-align:center;color:#a0a0a0;font-size:12px;margin:40px 0 16px}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:100}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:88vh;width:auto;height:auto;box-shadow:0 10px 30px rgba(0,0,0,.6);border-radius:12px}
+.lb-close,.lb-prev,.lb-next{position:fixed;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.08);border:1px solid #444;color:#fff;padding:10px 12px;border-radius:10px;cursor:pointer;user-select:none}
+.lb-close{top:24px;right:24px;transform:none}
+.lb-prev{left:24px}
+.lb-next{right:24px}
+.lb-close:hover,.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,.15)}
+.metal-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;background:#05070a}
+.metal-bg::before,.metal-bg::after{content:"";position:absolute;inset:-8%}
+.metal-bg::before{background:
+  url('images/bg_guitar_lightning.webp') left -120px top -120px/640px auto no-repeat,
+  url('images/bg_richman_logo.webp') right -120px bottom -160px/520px auto no-repeat,
+  url('images/bg_poster_color.webp') center 18%/640px auto no-repeat,
+  radial-gradient(800px 520px at 50% -120px, rgba(0,140,255,.28), transparent 60%),
+  radial-gradient(700px 440px at 110% 120%, rgba(165,0,255,.22), transparent 60%);
+  filter:saturate(1.04) blur(2px); opacity:.44}
+.metal-bg::after{background:
+  url('images/bg_schedule.webp') center/cover no-repeat,
+  repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 2px, rgba(255,255,255,.03) 2px 5px, transparent 5px 9px),
+  linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.1));
+  mix-blend-mode:soft-light; opacity:.5}
+.page-scrim{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.68))}
+</style>
 </head>
 <body>
-    <h1>LJH의 첫페이지!</h1>
-</body>
-</html>
+<div class="metal-bg" aria-hidden="true"></div><div class="page-scrim" aria-hidden="true"></div>
+<header class="nav"><div class="nav-inner">
+  <div class="logo">aespa is zzin</div>
+  <nav class="menu" aria-label="Primary">
+    <a href="#members">Members</a><a href="#discography">Discography</a><a href="#gallery">Gallery</a><a href="#links">Links</a>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <h1>부장님이 허락한 에스파 덕질</h1>
+  <p>퇴근 시간보다 기다려지는 에스파 컴백. aespa The 6th Mini Album 〖Rich Man〗2025.09.05 1PM (KST)</p>
+</section>
+
+<section id="members" class="section"><h2>Members</h2><div class="members">
+  <article class="member"><div class="pic">
+    <img alt="KARINA" src="images/karina.webp" loading="lazy">
+    <a class="ig-link" href="https://www.instagram.com/katarinabluu/" target="_blank" rel="noopener" aria-label="Open KARINA Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zM18 5.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 5.75z"></path></svg>
+    </a></div><h4>KARINA</h4></article>
+  <article class="member"><div class="pic">
+    <img alt="WINTER" src="images/winter.webp" loading="lazy">
+    <a class="ig-link" href="https://www.instagram.com/imwinter/" target="_blank" rel="noopener" aria-label="Open WINTER Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zM18 5.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 5.75z"></path></svg>
+    </a></div><h4>WINTER</h4></article>
+  <article class="member"><div class="pic">
+    <img alt="GISELLE" src="images/giselle.webp" loading="lazy">
+    <a class="ig-link" href="https://www.instagram.com/aerichandesu/" target="_blank" rel="noopener" aria-label="Open GISELLE Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zM18 5.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 5.75z"></path></svg>
+    </a></div><h4>GISELLE</h4></article>
+  <article class="member"><div class="pic">
+    <img alt="NINGNING" src="images/ningning.webp" loading="lazy">
+    <a class="ig-link" href="https://www.instagram.com/imnotningning/" target="_blank" rel="noopener" aria-label="Open NINGNING Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zM18 5.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 5.75z"></path></svg>
+    </a></div><h4>NINGNING</h4></article>
+</div></section>
+
+<section id="discography" class="section"><h2>Discography</h2><div class="disco">
+  <article class="track-card"><a class="cover" href="https://youtu.be/Mk-lWh31BK4?feature=shared" target="_blank" rel="noopener"><img alt="Dark Arts album cover" src="images/cover_dark_arts.webp" loading="lazy"></a><div class="info"><h3>Dark Arts</h3><div class="meta">2025.07.15.</div><div class="actions"><a class="btn" href="https://youtu.be/Mk-lWh31BK4?feature=shared" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1 -.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path><path d="M10 8l6 4-6 4z"></path></svg><span>Watch MV</span></a></div></div></article>
+  <article class="track-card"><a class="cover" href="https://youtu.be/jWQx2f-CErU?feature=shared" target="_blank" rel="noopener"><img alt="Whiplash album cover" src="images/cover_whiplash.webp" loading="lazy"></a><div class="info"><h3>Whiplash</h3><div class="meta">2024.10.21.</div><div class="actions"><a class="btn" href="https://youtu.be/jWQx2f-CErU?feature=shared" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1 -.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path><path d="M10 8l6 4-6 4z"></path></svg><span>Watch MV</span></a></div></div></article>
+  <article class="track-card"><a class="cover" href="https://youtu.be/nFYwcndNuOY?feature=shared" target="_blank" rel="noopener"><img alt="Armageddon album cover" src="images/cover_armageddon.webp" loading="lazy"></a><div class="info"><h3>Armageddon</h3><div class="meta">2024.05.27.</div><div class="actions"><a class="btn" href="https://youtu.be/nFYwcndNuOY?feature=shared" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1 -.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path><path d="M10 8l6 4-6 4z"></path></svg><span>Watch MV</span></a></div></div></article>
+  <article class="track-card"><a class="cover" href="https://youtu.be/phuiiNCxRMg?feature=shared" target="_blank" rel="noopener"><img alt="Supernova album cover" src="images/cover_armageddon.webp" loading="lazy"></a><div class="info"><h3>Supernova</h3><div class="meta">2024.05.13.</div><div class="actions"><a class="btn" href="https://youtu.be/phuiiNCxRMg?feature=shared" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1 -.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path><path d="M10 8l6 4-6 4z"></path></svg><span>Watch MV</span></a></div></div></article>
+</div></section>
+
+<section id="gallery" class="section"><h2>Gallery</h2><div class="gallery" id="galleryGrid">
+  <figure class="gcard g-smtown-day2"><img alt="SMTOWN LIVE 2025 in TOKYO DAY 2" src="images/smtown_day2.webp" loading="lazy"><figcaption class="gcap"><strong>SMTOWN LIVE 2025 in TOKYO DAY 2</strong><span>2025.08.10.</span></figcaption></figure>
+  <figure class="gcard g-smtown-day1"><img alt="SMTOWN LIVE 2025 in TOKYO DAY 1" src="images/smtown_day1.webp" loading="lazy"><figcaption class="gcap"><strong>SMTOWN LIVE 2025 in TOKYO DAY 1</strong><span>2025.08.09.</span></figcaption></figure>
+  <figure class="gcard g-kcon-la-2025"><img alt="KCON LA 2025" src="images/kcon_la_2025.webp" loading="lazy"><figcaption class="gcap"><strong>KCON LA 2025</strong><span>2025.08.03.</span></figcaption></figure>
+  <figure class="gcard g-music-core-japan"><img alt="쇼! 음악중심 in Japan" src="images/music_core_japan.webp" loading="lazy"><figcaption class="gcap"><strong>쇼! 음악중심 in Japan</strong><span>2025.08.01.</span></figcaption></figure>
+</div></section>
+
+<section id="links" class="section"><h2>Links</h2><div class="links"><ul>
+  <li><a href="https://x.com/aespa_official" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4l7 8-7 8h4l5-6 5 6h4l-7-8 7-8h-4l-5 6-5-6H3z"></path></svg><span>aespa official X</span></a></li>
+  <li><a href="https://www.youtube.com/@aespa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16c1.1 0 2 .9 2 2v8c0 1.1  -.9 2-2 2H4c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2z"></path><path d="M10 8l6 4-6 4z"></path></svg><span>aespa official YouTube</span></a></li>
+  <li><a href="https://www.instagram.com/aespa_official/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5zM18 5.75a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 18 5.75z"></path></svg><span>aespa official Instagram</span></a></li>
+  <li><a href="https://naver.me/5eUZ4fM9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6l6 8V4h4v16h-6l-6-8v8H4z"></path></svg><span>reporter Naver Page</span></a></li>
+  <li><a href="https://weekly.donga.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"></path><path d="M6 8h12v2H6zM6 12h12v2H6zM6 16h8v2H6z"></path></svg><span>Weekly Donga Page</span></a></li>
+</ul></div></section>
+
+<p class="footer">unofficial fan page made with ChatGPT by zzin@donga.com</p>
+
+<div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Image viewer" tabindex="-1">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-next" id="lbNext" aria-label="Next">›</button>
+</div>
+<script>
+(function(){ 
+  const imgs = Array.from(document.querySelectorAll('#gallery .gcard img'));
+  if(!imgs.length) return;
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const btnClose = document.getElementById('lbClose');
+  const btnPrev = document.getElementById('lbPrev');
+  const btnNext = document.getElementById('lbNext');
+  let idx = 0;
+  const open = (i)=>{ idx=i; lbImg.src = imgs[idx].src; lbImg.alt = imgs[idx].alt || ''; lb.classList.add('open'); document.body.style.overflow='hidden'; };
+  const close = ()=>{ lb.classList.remove('open'); document.body.style.overflow=''; };
+  const prev = ()=> open((idx - 1 + imgs.length) % imgs.length);
+  const next = ()=> open((idx + 1) % imgs.length);
+  imgs.forEach((im,i)=> im.addEventListener('click', function(e){ e.preventDefault(); open(i); }));
+  btnClose.addEventListener('click', close);
+  btnPrev.addEventListener('click', prev);
+  btnNext.addEventListener('click', next);
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  window.addEventListener('keydown', function(e){ if(!lb.classList.contains('open')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') prev(); if(e.key==='ArrowRight') next(); });
+})();  
+</script>
+
+</body></html>
